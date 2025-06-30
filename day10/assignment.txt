@@ -1,0 +1,21 @@
+Create
+Insert a new student into the collection with your own details.
+Add 3 students in one command using insertMany.
+
+Read
+Find all students in the CSE branch.
+Find students who are in 2nd year and are hostellers.
+Find the student who scored more than 90 in Maths.
+Show name and branch of all students (only those fields).
+Count the number of students in CSE branch.
+Get all students sorted by their Physics marks in descending order.
+
+Update
+Update the Chemistry marks of roll number "CSE001" to 80.
+Add a new field cgpa with default value 8.0 to all students.
+Change hosteller status to false for all 4th-year students.
+Rename the field branch to department.
+
+Delete
+Delete the student whose roll number is "ECE002".
+Delete all students who are in 1st year.

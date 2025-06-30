@@ -45,3 +45,20 @@ colleges> db.mentors.find()
 
 
 db.mentors.updateOne({name:"sriram"},{$set:{experience: 3, subject:["Game Development"]}},{upsert: true})
+db.mentors.deleteOne({name:"sidhu"})  : delete the data of sidhu 
+db.mentors.deleteMany({experience:{$lt:5}}) : delete the data who has experience less than 5
+db.mentors.find({},{name:1}) :
+  [
+    { _id: ObjectId('685e239e0833668d1d748a5f'), name: 'sidhish' },
+    { _id: ObjectId('685e24cf0833668d1d748a61'), name: 'jagga' }
+  ]
+db.mentors.find({},{_id:0})
+  [
+    { name: 'sidhish', experience: 6, subject: [ 'MERN', 'DSA' ] },
+    { name: 'jagga', experience: 6, subject: [ 'MERN', 'DSA' ] }
+  ]
+ db.mentors.find({},{name:1,_id:0})
+  [ { name: 'sidhish' }, { name: 'jagga' } ]
+
+
+  

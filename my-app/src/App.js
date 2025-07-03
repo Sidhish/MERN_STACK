@@ -124,14 +124,89 @@
 // }
 // export default App;
 
-import "./App.css";
-import React from "react";
-import List from "./components/list";
-function App(){
+// import "./App.css";
+// import React from "react";
+// import List from "./components/lifecycle/ClassComponent";
+// function App(){
+//   return (
+//     <div className="App">
+//       <List />
+//     </div>
+//   );
+// }
+// export default App;
+// import "./App.css";
+// import React from "react";
+// import List from "./components/lifecycle/Listner";
+// function App(){
+//   return (
+//     <div className="App">
+//       <List />
+//     </div>
+//   );
+// }
+// export default App;
+// import "./App.css";
+// import React from "react";
+// import List from "./components/lifecycle/CounterWithHook";
+// function App(){
+//   return (
+//     <div className="App">
+//       <List />
+//     </div>
+//   );
+// }
+// export default App;
+// import "./App.css";
+// import React from "react";
+// import List from "./components/lifecycle/UserSearch";
+// function App(){
+//   return (
+//     <div className="App">
+//       <List />
+//     </div>
+//   );
+// }
+// export default App;
+// import "./App.css";
+// import React, {useState}from "react";
+// import List from "./components/lifecycle/TimeWithEffect";
+// import TimeWithEffect from "./components/lifecycle/TimeWithEffect";
+// import { useState } from "react";
+// function App(){
+//   const [is,set] = useState();
+//   return (
+//     <div className="App">
+//       {/* <List /> */}
+//       {is && <TimeWithEffect/>}
+//       <button onClick={()=> StyleSheetList((prev) => !prev)}>Update</button>
+//     </div>
+//   );
+// }
+// export default App;
+
+// import React from 'react';
+// import CheatingDetection from './components/lifecycle/cheating';
+
+// const App = () => {
+//   return (
+//     <div>
+//       <CheatingDetection />
+//     </div>
+//   );
+// };
+
+// export default App;
+import React from 'react';
+// import CheatingDetection from './components/lifecycle/StopWatch';
+import Stopwatch from './components/lifecycle/StopWatch';
+
+const App = () => {
   return (
-    <div className="App">
-      <List />
+    <div>
+      <Stopwatch />
     </div>
   );
-}
+};
+
 export default App;

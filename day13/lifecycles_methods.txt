@@ -1,0 +1,23 @@
+lifCycle methods and Use Effect
+what are lifCycle methods?\
+life of a component 
+in react, lifecycle methods are function that get called at different phases of a components exixtence:
+    *When it's created
+    * when it updates
+    * when it's about to unmount
+
+LifeCylces in class components
+    1.mounting phase (Component is created)
+        * componentDidMount() : 
+    2.Updating phase(props or state change)
+        * shouldComponentUpdate() : control wheather re-render should happen
+        * componentDidUpdate() : called after the component updates 
+    3.unMounting phase
+        * componentWillUnmount() : cleanup (event listners,timer,etc)
+
+Function
+
+What is UseEffect in React?
+    useEffect is a side-effect management hook introduced in React 16.8
+
+    

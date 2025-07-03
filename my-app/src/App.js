@@ -198,13 +198,18 @@
 
 // export default App;
 import React from 'react';
+import './App.css';
 // import CheatingDetection from './components/lifecycle/StopWatch';
-import Stopwatch from './components/lifecycle/StopWatch';
+// import Draft from './components/Draft';
+import MemoComp from './components/MemoComp';
 
 const App = () => {
   return (
     <div>
-      <Stopwatch />
+      {/* <Stopwatch /> */}
+      {/* <Draft /> */}
+      <MemoComp />
+      
     </div>
   );
 };

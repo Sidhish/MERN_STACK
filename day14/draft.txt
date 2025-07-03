@@ -1,0 +1,5 @@
+//Local storage : which persits the data while ending the sessiom
+//session storage: erase the data , when we are ending the session
+//IndexDB : local document based dataBase(local storage / local data base)asynchronous
+//Cookies : To store tokens and user behaviours.. It stores in key : value pair(lpu.com here lpu is domain and student.lpu.in here student is subdomain)
+//to use cookies Safari uses MaxAge and chrome uses Expires

@@ -46,6 +46,14 @@ import React, { useEffect, useState } from "react";
 
 function Cheating() {
   const [status, setStatus] = useState(false);
+  const [isOnline,setIsOnline] = useState(navigator.online);
+  const handleOnline = () => {
+    setIsOnline(true);
+  }
+  const handleOffline = () => {
+    setIsOnline(false);
+    setStatus(true);
+  }
 
   const handleResize = () => {
     setStatus(true);
@@ -57,15 +65,20 @@ function Cheating() {
 
   useEffect(() => {
     window.addEventListener("resize", handleResize);
+    window.addEventListener("online",handleOnline);
+    window.addEventListener("offline",handleOffline);
 
     return () => {
       window.removeEventListener("resize", handleNormal);
+      window.removeEventListener("online",handleOnline);
+      window.removeEventListener("offline",handleOffline);
     };
-  }, []);
+  }, []); 
 
   return (
     <main>
       <h1>{!status ? "No Cheating Detected" : "Cheating Detected"}</h1>
+      <h2>{isOnline ? "Online" : "Offline"}</h2>
     </main>
   );
 }

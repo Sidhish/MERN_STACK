@@ -198,18 +198,21 @@
 
 // export default App;
 import React from 'react';
-import './App.css';
+// import './App.css';
 // import CheatingDetection from './components/lifecycle/StopWatch';
 // import Draft from './components/Draft';
-import MemoComp from './components/MemoComp';
+// import Counter from './components/store/RedCounter';
+import MultiReducer from './components/store/MultiReducer';
+// import MemoComp from './components/MemoComp';
 
 const App = () => {
   return (
     <div>
       {/* <Stopwatch /> */}
       {/* <Draft /> */}
-      <MemoComp />
-      
+      {/* <MemoComp /> */}
+      {/* <Counter />       */}
+      <MultiReducer />
     </div>
   );
 };

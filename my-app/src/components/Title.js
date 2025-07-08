@@ -1,7 +1,9 @@
-import React from 'react'
+import React from "react";
 
 function Title(props) {
-  const {}
+  const { text } = props;
+  console.log(`Title Component Rendered! ${text}`);
+  return <h1>{text}</h1>;
 }
 
-export default Title
+export default React.memo(Title);

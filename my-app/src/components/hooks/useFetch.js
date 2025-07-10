@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import Products from "./Products";
 
 function useFetch(arg) {
   const { url, method } = arg;

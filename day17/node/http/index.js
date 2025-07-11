@@ -42,7 +42,7 @@ server.listen(3001, () => {
 //     const student ={
 //         name: "Sidhish",
 //         college: "LPU"
-//     };
+//     };h
 //     res.writeHead(200,{"Content-Type":"application/json"});
 //     res.end(JSON.stringify(student));
 // });

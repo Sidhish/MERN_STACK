@@ -1,0 +1,57 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather Application</title>
+    <style>
+      * {
+        margin: 0px;
+        padding: 0px;
+        font-family: "Courier New", Courier, monospace;
+      }
+
+      body {
+        display: flex;
+        height: 100vh;
+        gap: 10px;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        background-color: aliceblue;
+      }
+
+      h1 {
+        font-size: 48px;
+      }
+
+      label {
+        font-size: 20px;
+        font-weight: 550;
+      }
+
+      input {
+        padding: 5px 10px;
+        font-size: 16px;
+      }
+
+      button {
+        border: none;
+        font-size: 16px;
+        border-radius: 5px;
+        padding: 10px 15px;
+        background-color: orange;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Weather APP</h1>
+
+    <form method="post" action="/submit">
+      <label>City Name:</label>
+      <input name="city" placeholder="Jalandhar" type="text" />
+      <button>Submit</button>
+    </form>
+  </body>
+</html>

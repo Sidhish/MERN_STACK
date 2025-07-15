@@ -1,16 +1,16 @@
-const express = require("express");
-const {getUser,createUser} = require("../controller/user.controller");
+//user .route
+
+
+const express = require('express');
+const { getUser, createUser } = require("../controller/user.controller");
+const { getProduct, createProduct } = require("../controller/product.controller");
+
 const router = express.Router();
 
-// router.get("/",(req,res) => {
-//     res.status(200).send("This is a user router");
+router.get("/user", getUser);         
+router.post("/user", createUser);     
 
-// });
-// router.get("/users",(req,res) => {
-//     res.status(200).send("This is a user router");
-// });
-router.get("/",getUser);
-router.get("/user",getUser);
-router.post("/",createUser);
+router.get("/product", getProduct);       
+router.post("/product", createProduct);    
 
 module.exports = router;

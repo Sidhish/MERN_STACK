@@ -1,7 +1,9 @@
-function getUser(req,res) {
-    res.status(200).send("This is a user product");
+//procuct.controller
+function getProduct(req, res) {
+    res.status(200).send("This is a product router");
 }
-function createUser(req,res){
-        res.status(200).send("This is a user product");
+function createProduct(req, res) {
+    res.status(200).send("This is a product post router");
 }
-module.exports = {getUser,createUser};
+
+module.exports={getProduct,createProduct};
